@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#DDDDDD];
+  }
+}
+
+.modal-content {
+  @apply bg-white rounded-2xl max-w-[90vw];
+}
+
+.modal-title {
+  @apply text-[22px] font-bold leading-[26px] mb-6;
+}
+
+.input-label {
+  @apply text-base text-black mb-2;
+}
+
+.text-input {
+  @apply w-full px-[11px] py-[8px] border border-[#777777] rounded placeholder-[#CCCCCC] focus:outline-none focus:ring-2 focus:ring-[#7695EC] focus:border-transparent;
+}
+
+.primary-button {
+  @apply bg-[#7695EC] text-white rounded px-8 py-[6px] hover:bg-[#6585dc] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed transition-colors;
+}
+
+.secondary-button {
+  @apply bg-white text-black border border-[#999999] rounded px-8 py-[6px] hover:bg-gray-50 transition-colors;
+}
+
+.danger-button {
+  @apply bg-[#FF5151] text-white rounded px-8 py-[6px] hover:bg-[#ff3737] transition-colors;
+}
+
+.post-card {
+  @apply bg-white rounded mb-6 overflow-hidden;
+}
+
+.post-header {
+  @apply bg-[#7695EC] text-white p-6 flex justify-between items-center;
+}
+
+.post-title {
+  @apply text-[22px] font-bold leading-[26px];
+}
+
+.post-content {
+  @apply p-6;
+}
+
+.post-meta {
+  @apply flex justify-between text-[#777777] text-lg mb-4;
+}
+
+.post-text {
+  @apply text-black text-lg whitespace-pre-line;
+}
